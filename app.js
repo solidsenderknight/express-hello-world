@@ -13,7 +13,7 @@ app.post('/api/message', async (req, res) => {
             messages: [{ role: "user", content: message }],
         }, {
             headers: {
-                'Authorization': `Bearer sk-proj-PStG7784ZWV3XnSFMLpRT3BlbkFJQVYm9Ff1lztrPvIcqaSn`
+                'Authorization': `Bearer key`
             }
         });
         res.send(response.data.choices[0].message.content);
